@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Report Waste</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h2>Report Garbage</h2>
+
+<input type="file" id="image"><br>
+
+<select id="category">
+<option>Plastic</option>
+<option>Organic</option>
+<option>Paper</option>
+<option>Metal</option>
+<option>E-Waste</option>
+<option>Mixed Waste</option>
+</select>
+
+<br>
+
+<button onclick="getLocation()">Get Current Location</button>
+
+<p id="location"></p>
+
+<button onclick="submitComplaint()">Submit Complaint</button>
+
+<script src="script.js"></script>
+
+</body>
+</html>
