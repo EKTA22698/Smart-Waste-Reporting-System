@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Track</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<h2>Complaint Status</h2>
+
+<div id="result"></div>
+
+<script>
+
+let complaint=JSON.parse(localStorage.getItem("complaint"));
+
+if(complaint){
+
+document.getElementById("result").innerHTML=`
+
+<h3>Complaint ID : ${complaint.id}</h3>
+
+<p>Waste Type : ${complaint.category}</p>
+
+<p>Latitude : ${complaint.lat}</p>
+
+<p>Longitude : ${complaint.lng}</p>
+
+<h2>Status : Pending</h2>
+
+`;
+
+}
+
+else{
+
+document.getElementById("result").innerHTML="No Complaint Found";
+
+}
+
+</script>
+
+</body>
+</html>
